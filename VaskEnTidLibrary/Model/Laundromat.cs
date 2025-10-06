@@ -10,39 +10,39 @@ namespace VaskEnTidLibrary.Model
     {
         private int _laundromatID;
         private string _adress;
-        private string _zipcode;
+        private string _zipCode;
         private string _city;
 
-        public int LaundromatID
+        internal int LaundromatID
         {
             get { return _laundromatID; }
             set { _laundromatID = value; }
         }
 
-        public string Adress
+        internal string Adress
         {
             get { return _adress; }
             set { _adress = value; }
         }
 
-        public string Zipcode
+        internal string ZipCode
         {
-            get { return _zipcode; }
-            set { _zipcode = value; }
+            get { return _zipCode; }
+            set { _zipCode = value; }
         }
 
-        public string City
+        internal string City
         {
             get { return _city; }
             set { _city = value; }
         }
 
-        public Laundromat(int laundromatID, string adress, string zipcode, string city)
+        public Laundromat(int laundromatID, string adress, string zipCode, string city)
         {
-            _laundromatID = laundromatID;
-            _adress = adress;
-            _zipcode = zipcode;
-            _city = city;
+            LaundromatID = laundromatID;
+            Adress = adress;
+            Zipcode = zipCode;
+            City = city;
         }
 
     }

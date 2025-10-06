@@ -14,31 +14,31 @@ namespace VaskEnTidLibrary.Model
         private dateOnly _bookingDate;
         private timeOnly _bookingTime;
 
-        public int BookingID
+        internal int BookingID
         {
             get { return _bookingID; }
             set { _bookingID = value; }
         }
 
-        public int MachineID
+        internal int MachineID
         {
             get { return _machineID; }
             set { _machineID = value; }
         }
 
-        public string PhoneNumber
+        internal string PhoneNumber
         {
             get { return _phoneNumber; }
             set { _phoneNumber; = value; }
         }
 
-        public dateOnly BookingDate
+        internal dateOnly BookingDate
         {
             get { return _bookingDate; }
             set { _bookingDate; = value; }
         }
 
-        public timeOnly BookingTime
+        internal timeOnly BookingTime
         {
             get { return _bookingTime; }
             set { _bookingTime; = value; }
@@ -46,11 +46,11 @@ namespace VaskEnTidLibrary.Model
 
         public Laundromat(int bookingID, int machineID, string phoneNumber, dateOnly bookingDate, timeOnly bookingTime)
         {
-            _bookingID = bookingID;
-            _machineID = machineID;
-            _phoneNumber = phoneNumber;
-            _bookingDate = bookingDate;
-            _bookingTime = bookingTime;
+            BookingID = bookingID;
+            MachineID = machineID;
+            PhoneNumber = phoneNumber;
+            BookingDate = bookingDate;
+            BookingTime = bookingTime;
         }
 
     }

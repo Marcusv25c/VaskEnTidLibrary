@@ -8,7 +8,7 @@ namespace VaskEnTidLibrary.Model
 {
     public class Resident
     {
-        private string _phoneNo;
+        private string _phoneNumber;
         private string _firstName;
         private string _lastName;
         private string _adress;
@@ -17,7 +17,7 @@ namespace VaskEnTidLibrary.Model
         private string _apartmentNo;
         private string _email;
 
-        internal string PhoneNo { get { return _phoneNo; } set { _phoneNo = value; } }
+        internal string PhoneNumber { get { return _phoneNumber; } set { _phoneNumber = value; } }
         internal string FirstName { get { return _firstName; } set { _firstName = value; } }
         internal string LastName { get { return _lastName; } set { _lastName = value; } }
         internal string Adress { get { return _adress; } set { _adress = value; } }
@@ -26,9 +26,9 @@ namespace VaskEnTidLibrary.Model
         internal string ApartmentNo { get { return _apartmentNo; } set { _apartmentNo = value; } }
         internal string Email { get { return _email; } set { _email = value; } }
 
-        public Resident(string phoneNo, string firstName, string lastName, string adress, string zipCode, string city, string apartmentNo, string email)
+        public Resident(string phoneNumber, string firstName, string lastName, string adress, string zipCode, string city, string apartmentNo, string email)
         {
-            PhoneNo = phoneNo;
+            PhoneNumber = phoneNumber;
             FirstName = firstName;
             LastName = lastName;
             Adress = adress;
