@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VaskEnTidLibrary.Repo
 {
-    internal interface IMachineRepo
+    internal interface IDatabaseRepo
     {
     }
 }

@@ -8,5 +8,6 @@ namespace VaskEnTidLibrary.Repo
 {
     internal class BookingRepo
     {
+
     }
 }
